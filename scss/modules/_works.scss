@@ -153,8 +153,8 @@ input[type="checkbox"]:checked ~ .grid {
   }
   .gallery-container {
     svg {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
     h3 {
       font-size: 0.7rem;
@@ -164,6 +164,6 @@ input[type="checkbox"]:checked ~ .grid {
 
 @media (min-height: 768px) {
   .gallery-container {
-    min-height: 50vh;
+    min-height: 30vh;
   }
 }
