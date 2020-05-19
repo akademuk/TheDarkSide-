@@ -74,8 +74,6 @@ a:hover {
   position: relative;
   display: inline-block;
   width: 40px;
-  height: 48px;
-  padding: 14px 5px;
   cursor: pointer;
 }
 .nav-wrapper:not(.active) .nav-toogler {
@@ -115,7 +113,7 @@ a:hover {
   position: relative;
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0 auto !important;
   margin-bottom: 100px;
   overflow: hidden;
 }
@@ -341,4 +339,34 @@ a:hover {
   #next-btn {
     right: 5px;
   }
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  background: #fff;
+  padding: 2rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay,
+.modal {
+  display: none;
+}
+body.open {
+  overflow: hidden;
+}
+.open .overlay {
+  display: block;
+}
+.open .modal {
+  display: block;
 }

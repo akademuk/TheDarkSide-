@@ -1,0 +1,235 @@
+.about {
+  background: $black;
+  padding: 93px 0 132px 0;
+  margin: -2px 0;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-container-whoAmI {
+  width: 50%;
+}
+.about-container-whatIdo {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.about-container-whoAmI-text {
+  p {
+    font-size: 0.9rem;
+    line-height: 45px;
+    margin-bottom: 60px;
+  }
+}
+.about-container-whoAmI-skills {
+  h2 {
+    margin-bottom: 33px;
+  }
+}
+.about-container-whoAmI-skills-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  &:before {
+    content: "";
+    display: flex;
+    width: 23px;
+    height: 4px;
+    font-size: 2rem;
+    background: $crimson;
+    margin-right: -2px;
+  }
+  p {
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    padding: 0 9px;
+    border-left: 4px solid $crimson;
+    border-right: 4px solid $crimson;
+    transform: skew(-0.06turn, 0deg);
+    span {
+      transform: skew(0.06turn, 0deg);
+      font-style: normal;
+      white-space: nowrap;
+      display: flex;
+    }
+  }
+  hr {
+    width: 100%;
+    height: 4px;
+    background: #252525;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: $crimson;
+      margin-left: -2px;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}
+.about-container-whoAmI-skills {
+  .about-container-whoAmI-skills-container {
+    &:nth-of-type(1) {
+      hr {
+        &::after {
+          width: 75%;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      hr {
+        &::after {
+          width: 82%;
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      hr {
+        &::after {
+          width: 96%;
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      hr {
+        &::after {
+          width: 24%;
+        }
+      }
+    }
+    &:nth-of-type(5) {
+      hr {
+        &::after {
+          width: 39%;
+        }
+      }
+    }
+  }
+}
+.about-container-whatIdo-container {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 3px solid #252525;
+  padding-top: 30px;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-animation: about-opacity 3s infinite;
+    -moz-animation: about-opacity 3s infinite;
+    -o-animation: about-opacity 3s infinite;
+    animation: about-opacity 3s infinite;
+  }
+}
+.about-container-whatIdo-container-info {
+  margin-left: 25px;
+  padding-bottom: 25px;
+}
+.about-container-whatIdo-container-info-tittle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0;
+}
+.about-container-whatIdo-container-info-text {
+  font-size: 0.9rem;
+  line-height: 30px;
+}
+.about-container-whatIdo-container-svg {
+  padding-left: 15px;
+}
+.about-container-whatIdo {
+  .about-container-whatIdo-container {
+    &:nth-of-type(4) {
+      border-bottom: none;
+    }
+  }
+}
+@-webkit-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-container-whoAmI {
+    width: 100%;
+  }
+  .about-container-whatIdo {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h2 {
+      width: 100%;
+    }
+  }
+  .about-container-whatIdo-container {
+    width: 48%;
+  }
+  .about-container-whatIdo {
+    .about-container-whatIdo-container {
+      &:nth-of-type(4) {
+        border-bottom: 3px solid #252525;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about-container-whoAmI-text {
+    p {
+      line-height: normal;
+    }
+  }
+  .about-container-whatIdo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container-whatIdo-container-svg {
+    margin-bottom: 15px;
+  }
+  .about-container-whoAmI-skills {
+    margin-bottom: 50px;
+  }
+  .about-container-whatIdo-container-info-text {
+    line-height: normal;
+  }
+}
