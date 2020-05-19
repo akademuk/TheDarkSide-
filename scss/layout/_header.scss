@@ -370,3 +370,22 @@ body.open {
 .open .modal {
   display: block;
 }
+@media (orientation: landscape) {
+  .navigation {
+    margin-top: 30%;
+    width: 70%;
+  }
+  .nav-wrapper {
+    .active {
+      ul {
+        justify-content: space-around;
+        padding-top: 20px;
+      }
+    }
+  }
+  #scroll-down {
+    a {
+      padding-top: 80px;
+    }
+  }
+}
