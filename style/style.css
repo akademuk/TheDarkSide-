@@ -917,6 +917,119 @@ input[type="checkbox"]:checked + .lightbox {
 }
 
 textarea {
+  height: 188px;
+  color: #484848;
+  font-size: 0.9rem;
+  width: 138%;
+  margin-right: 30px;
+  background: #000;
+  border: 3px solid #252525;
+  padding: 17px 0 0 13px;
+  outline: none;
+  resize: none;
+}
+
+.contact {
+  background: #000;
+  padding-bottom: 99px;
+  margin-top: -1px;
+}
+
+.contact form {
+  display: flex;
+  max-height: 197px;
+  margin-top: 50px;
+}
+
+.form-right {
+  width: 65%;
+  display: flex;
+}
+
+.form-right label input {
+  color: transparent;
+  font-size: 0.9rem;
+  background: #000;
+  border: 3px solid #252525;
+  height: 212px;
+  width: 83%;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-left {
+  color: #484848;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  width: 35%;
+  margin-right: 50px;
+}
+
+.form-left input {
+  border: 3px solid #252525;
+  background: #000;
+  padding: 16px 0 16px 14px;
+  margin-bottom: 24px;
   width: 100%;
+  outline: none;
+  color: #484848;
+}
+
+label {
+  position: relative;
+}
+
+label svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    height: 300px;
+  }
+  .contact .wrapper form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-left input {
+    width: 30%;
+  }
+  .form-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .form-right input {
+    width: 100% !important;
+  }
+  textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-left {
+    flex-direction: column;
+  }
+  .form-left input {
+    width: 95%;
+  }
+  .contact {
+    height: 60vh;
+  }
+  textarea {
+    height: 100px;
+  }
+  .form-right label input {
+    height: 123px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
