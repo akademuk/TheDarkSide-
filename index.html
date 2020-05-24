@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/font-awesome.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -349,42 +350,42 @@
         </div>
       </div>
       <div class="works">
-        <input type="checkbox" />
-        <label for="pic-1" class="lightbox">
-          <img src="images/work-icon1.png" />
+        <input type="checkbox" id="pic-1" id="myDialog2" />
+        <label for="pic-1" class="lightbox" onclick="closeDialog()">
+          <img src="images/big/work-icon1.jpg" />
         </label>
-        <input type="checkbox" id="pic-2" />
-        <label for="pic-2" class="lightbox"
-          ><img src="images/work-icon2.png"
+        <input type="checkbox" id="pic-2" id="myDialog2" />
+        <label for="pic-2" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon2.jpg"
         /></label>
-        <input type="checkbox" id="pic-3" />
-        <label for="pic-3" class="lightbox"
-          ><img src="images/work-icon3.png"
+        <input type="checkbox" id="pic-3" id="myDialog2" />
+        <label for="pic-3" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon3.jpg"
         /></label>
-        <input type="checkbox" id="pic-4" />
-        <label for="pic-4" class="lightbox"
-          ><img src="images/work-icon4.png"
+        <input type="checkbox" id="pic-4" id="myDialog2" />
+        <label for="pic-4" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon4.jpg"
         /></label>
-        <input type="checkbox" id="pic-5" />
-        <label for="pic-5" class="lightbox"
-          ><img src="images/work-icon5.png"
+        <input type="checkbox" id="pic-5" id="myDialog2" />
+        <label for="pic-5" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon5.jpg"
         /></label>
-        <input type="checkbox" id="pic-6" />
-        <label for="pic-6" class="lightbox"
-          ><img src="images/work-icon6.png"
+        <input type="checkbox" id="pic-6" id="myDialog2" />
+        <label for="pic-6" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon6.jpg"
         /></label>
-        <input type="checkbox" id="pic-7" />
-        <label for="pic-7" class="lightbox"
-          ><img src="images/work-icon7.png"
+        <input type="checkbox" id="pic-7" id="myDialog2" />
+        <label for="pic-7" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon2.jpg"
         /></label>
-        <input type="checkbox" id="pic-8" />
-        <label for="pic-8" class="lightbox"
-          ><img src="images/work-icon8.png"
+        <input type="checkbox" id="pic-8" id="myDialog2" />
+        <label for="pic-8" class="lightbox" onclick="closeDialog()"
+          ><img src="images/big/work-icon1.jpg"
         /></label>
 
         <div class="grid">
-          <div class="gallery-container" onclick="">
-            <label for="pic-1" class="grid-item">
+          <div class="gallery-container" onclick="showDialog()">
+            <label for="pic-1" class="grid-item" id="idp" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -402,7 +403,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-2" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -421,7 +422,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-3" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -440,7 +441,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-4" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -459,7 +460,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-5" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -478,7 +479,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-6" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -497,7 +498,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-7" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -516,7 +517,7 @@
             </label>
             <h3>AO Logo</h3>
           </div>
-          <div class="gallery-container" onclick="">
+          <div class="gallery-container" onclick="showDialog()">
             <label for="pic-8" class="grid-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -537,11 +538,13 @@
           </div>
         </div>
       </div>
+
       <div class="reviews">
         <div class="wrapper reviews-container">
+          <h2>WHAT CLIENTS SAY ?</h2>
           <div class="reviews-container-info">
             <div class="reviews-container-info-tittle">
-              <h3>JosE Graves</h3>
+              <h4>JosE Graves</h4>
               <p>Managing editor</p>
             </div>
             <p class="reviews-container-info-text">
@@ -551,10 +554,9 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-
           <div class="reviews-container-info">
             <div class="reviews-container-info-tittle">
-              <h3>Harvey Wheeler</h3>
+              <h4>Harvey Wheeler</h4>
               <p>Director</p>
             </div>
             <p class="reviews-container-info-text">
@@ -564,35 +566,34 @@
               anim id est laborum.
             </p>
           </div>
-        </div>
 
-        <div class="reviews-container-info">
-          <div class="reviews-container-info-tittle">
-            <h3>Sheldon Floyd</h3>
-            <p>director</p>
+          <div class="reviews-container-info">
+            <div class="reviews-container-info-tittle">
+              <h4>Sheldon Floyd</h4>
+              <p>director</p>
+            </div>
+            <p class="reviews-container-info-text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+              veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
           </div>
-          <p class="reviews-container-info-text">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-            unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-        </div>
-
-        <div class="reviews-container-info">
-          <div class="reviews-container-info-tittle">
-            <h3>Vanessa Scott</h3>
-            <p>Founder</p>
+          <div class="reviews-container-info">
+            <div class="reviews-container-info-tittle">
+              <h4>Vanessa Scott</h4>
+              <p>Founder</p>
+            </div>
+            <p class="reviews-container-info-text">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+              ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+              non numquam eius modi tempora incidunt ut labore et dolore magnam
+              aliquam.
+            </p>
           </div>
-          <p class="reviews-container-info-text">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-            numquam eius modi tempora incidunt ut labore et dolore magnam
-            aliquam.
-          </p>
         </div>
       </div>
       <div class="contact">
@@ -622,6 +623,6 @@
     </footer>
     <script src="scripts/burger.js"></script>
     <script src="scripts/gallery.js"></script>
-    <script src="scripts/fix.js"></script>
+    <script src="scripts/notscroll.js"></script>
   </body>
 </html>

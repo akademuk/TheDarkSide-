@@ -1,0 +1,103 @@
+.reviews {
+  background: $black;
+  padding-top: 115px;
+  padding-bottom: 90px;
+}
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  h2 {
+    width: 100%;
+  }
+}
+.reviews-container-info-tittle {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #242424;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+.reviews-container-info {
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+  &:after {
+    content: "\f105";
+    font-size: 4rem;
+    font-family: FontAwesome;
+    transform: rotate(-135deg);
+    position: absolute;
+    top: -10%;
+    left: -4%;
+    color: $crimson;
+    opacity: 0;
+  }
+  &:before {
+    content: "\f105";
+    font-size: 4rem;
+    font-family: FontAwesome;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -10%;
+    right: -3%;
+    color: $crimson;
+    opacity: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    &:after {
+      opacity: 1;
+    }
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+.reviews-container-info-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 30px;
+}
+@-webkit-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes about-opacity {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -32,5 +32,20 @@ h3 {
   color: $crimson;
   opacity: 0;
 }
+h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    width: 32px;
+    height: 4px;
+    background: $crimson;
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+}
 @media (max-width: 568px) {
 }
