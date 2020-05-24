@@ -737,35 +737,35 @@ input[type="checkbox"]:checked + .lightbox {
 }
 
 .grid .gallery-container:nth-of-type(1) {
-  background: url(../../images/normal/work-icon1.jpg);
+  background: url(../images/normal/work-icon1.jpg);
 }
 
 .grid .gallery-container:nth-of-type(2) {
-  background: url(../../images/normal/work-icon2.jpg);
+  background: url(../images/normal/work-icon2.jpg);
 }
 
 .grid .gallery-container:nth-of-type(3) {
-  background: url(../../images/normal/work-icon3.jpg);
+  background: url(../images/normal/work-icon3.jpg);
 }
 
 .grid .gallery-container:nth-of-type(4) {
-  background: url(../../images/normal/work-icon4.jpg);
+  background: url(../images/normal/work-icon4.jpg);
 }
 
 .grid .gallery-container:nth-of-type(5) {
-  background: url(../../images/normal/work-icon5.jpg);
+  background: url(../images/normal/work-icon5.jpg);
 }
 
 .grid .gallery-container:nth-of-type(6) {
-  background: url(../../images/normal/work-icon6.jpg);
+  background: url(../images/normal/work-icon6.jpg);
 }
 
 .grid .gallery-container:nth-of-type(7) {
-  background: url(../../images/normal/work-icon2.jpg);
+  background: url(../images/normal/work-icon2.jpg);
 }
 
 .grid .gallery-container:nth-of-type(8) {
-  background: url(../../images/normal/work-icon1.jpg);
+  background: url(../images/normal/work-icon1.jpg);
 }
 
 .icon-nav {
@@ -817,6 +817,7 @@ input[type="checkbox"]:checked + .lightbox {
   background: #000;
   padding-top: 115px;
   padding-bottom: 90px;
+  margin-top: -1px;
 }
 
 .reviews-container {
@@ -900,6 +901,18 @@ input[type="checkbox"]:checked + .lightbox {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 568px) {
+  .reviews {
+    padding-top: 30px;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+  .reviews-container-info {
+    width: 100%;
   }
 }
 

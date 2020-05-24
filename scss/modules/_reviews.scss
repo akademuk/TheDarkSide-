@@ -2,6 +2,7 @@
   background: $black;
   padding-top: 115px;
   padding-bottom: 90px;
+  margin-top: -1px;
 }
 .reviews-container {
   display: flex;
@@ -99,5 +100,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 568px) {
+  .reviews {
+    padding-top: 30px;
+  }
+  .reviews-container {
+    flex-direction: column;
+  }
+  .reviews-container-info {
+    width: 100%;
   }
 }
