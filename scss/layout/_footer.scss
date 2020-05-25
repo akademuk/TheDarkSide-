@@ -37,6 +37,7 @@ footer {
 }
 .footer-info-contact {
   display: flex;
+  flex-wrap: wrap;
   a {
     display: flex;
     align-items: center;

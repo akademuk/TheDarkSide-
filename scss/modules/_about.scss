@@ -236,6 +236,9 @@
 @media (max-width: 576px) {
   .about {
     padding: 30px 0;
+    .wrapper {
+      max-width: 100%;
+    }
   }
   .about-container-whatIdo {
     flex-direction: column;

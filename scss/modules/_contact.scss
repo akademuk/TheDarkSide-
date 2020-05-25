@@ -17,7 +17,7 @@ textarea {
   margin-bottom: -1px;
   form {
     display: flex;
-    max-height: 197px;
+
     margin-top: 50px;
   }
 }
@@ -65,8 +65,8 @@ label {
 }
 @media (max-width: 768px) {
   .contact {
-    height: 300px;
     .wrapper {
+      max-width: 100%;
       form {
         display: flex;
         flex-direction: column;
@@ -106,9 +106,6 @@ label {
     input {
       width: 95%;
     }
-  }
-  .contact {
-    height: 40vh;
   }
   textarea {
     height: 100px;
