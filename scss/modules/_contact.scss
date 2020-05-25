@@ -14,6 +14,7 @@ textarea {
   background: $black;
   padding-bottom: 99px;
   margin-top: -1px;
+  margin-bottom: -1px;
   form {
     display: flex;
     max-height: 197px;
@@ -85,10 +86,18 @@ label {
     justify-content: space-between;
     input {
       width: 100% !important;
+      height: 123px !important;
     }
   }
   textarea {
     width: 90%;
+    height: 100px !important;
+    font-size: 0.7rem !important;
+  }
+  input {
+    &::placeholder {
+      font-size: 0.7rem;
+    }
   }
 }
 @media (max-width: 320px) {
@@ -99,7 +108,7 @@ label {
     }
   }
   .contact {
-    height: 60vh;
+    height: 40vh;
   }
   textarea {
     height: 100px;
@@ -110,5 +119,8 @@ label {
         height: 123px;
       }
     }
+  }
+  form {
+    justify-content: space-between;
   }
 }

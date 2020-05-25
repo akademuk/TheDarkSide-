@@ -26,7 +26,7 @@ input[type="checkbox"] {
   position: fixed;
   height: 100vh;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 input[type="checkbox"]:checked + .lightbox {
@@ -152,11 +152,5 @@ input[type="checkbox"]:checked + .lightbox {
     h3 {
       font-size: 0.7rem;
     }
-  }
-}
-
-@media (min-height: 768px) {
-  .gallery-container {
-    min-height: 50vh;
   }
 }
