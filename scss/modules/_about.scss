@@ -254,3 +254,16 @@
     }
   }
 }
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .about-container-whatIdo-container {
+    width: 50% !important;
+  }
+  .about-container-whatIdo {
+    flex-direction: row !important;
+  }
+  .about {
+    .wrapper {
+      max-width: 100%;
+    }
+  }
+}
